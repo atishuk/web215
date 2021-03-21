@@ -8,20 +8,29 @@ body {
 	font-family: 'Philosopher', sans-serif;
 	font-size: 1.1em;
 	color: #1f1f1f;
-	background-color: #E0E0E0;
 	height: auto;
 	min-width:460px;
 	width:100%;
 	display: block;
+	background-color: #E0E0E0;
 }
 
 main {
-	display:inline-block;
-	margin: 20px 0 20px 200px;
+	max-width: 60%;
+	display: block;
+	margin-left: 20%;
+	margin-right: 20%;
+	min-width: 600px;
+	/*background-color: white;*/
+}
+
+.content {
+	/*display:inline-block;*/
+	margin: 20px 30px 20px 230px;
 	min-height: 530px;
 	height: auto;
-	position: relative;
-	padding: 0 30px;
+	padding: 0;
+	/*max-width: inherit;*/
 }
 
 h1, h2, h3, h4, h5 {
@@ -52,7 +61,9 @@ figure {
 	text-align: center;
 	width: auto;
 	margin-bottom: 10px;
+	/*max-width: inherit;*/
 }
+
 
 /*brand page*/
 .logo_example {
@@ -94,7 +105,7 @@ figure {
 }
 
 .white {
-	background-color: white;
+	background-color: #707070;
 }
 
 .abc {
@@ -133,6 +144,7 @@ header{
 	background-position: 0 5%;
 	background-size: 50%;
 	background-color: #F0C53D;
+	min-width:745px;
 }
 
 .transbox {
@@ -195,13 +207,14 @@ header{
 /*navigation panel customization*/
 nav {
 	display: inline-block;
-	margin-left: 20px;
-	width: 167px;
+	width: 180px;
 	float: left;
 	height: auto;
 	font-family: 'Permanent Marker', cursive;
 	letter-spacing: 2px;
 	position: absolute;
+	margin-left: 20px;
+	margin-top: 10px;
 }
 
 .sidebar {
@@ -261,6 +274,7 @@ footer {
 	background-size: 50%;
 	background-position: 0 5%;
 	height: 100px;
+	min-width:745px;
 }
 
 .notes {
