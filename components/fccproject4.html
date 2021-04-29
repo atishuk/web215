@@ -1,0 +1,257 @@
+<style>
+	body {
+		min-width: 250px;
+		font-family: 'Philosopher', sans-serif;
+		margin: 0;
+		padding: 0;
+	}
+
+	p {
+		margin: 0;
+	}
+
+#navbar li {
+  list-style: none;
+
+}
+
+#navbar a {
+  color: inherit;
+  text-decoration: none;
+	display: block;
+	padding: 5px 5px;
+	font-size: 1.2em;
+	font-family: 'Permanent Marker', cursive;
+	background-color: #F0C53D;
+	border-color: #663F00;
+	color: #663F00;
+}
+#navbar a:hover {
+	background-color: #663F00;
+	color: #F0C53D;
+}
+
+#navbar ul {
+	margin: 0;
+}
+
+#navbar header {
+	color: #663F00;
+}
+
+#navbar {
+	position: fixed;
+	top: 0px;
+  left: 0px;
+	width: 170px;
+	height: 100%;
+	border-right: solid;
+  border-color: #9F710B;
+	background-color: #F0C53D;
+	padding: 0;
+	margin: 0;
+}
+
+h1, h2, h3, h4, h5 {
+	font-family: 'Permanent Marker', cursive;
+	font-weight: bold;
+}
+
+h2 {
+	background-color: #F0C53D;
+	margin-left: -17px;
+	padding: 5px 10px 5px 17px;
+}
+
+#main-doc {
+  position: absolute;
+  margin-left: 170px;
+  padding: 0 20px 20px 20px;
+  margin-bottom: 210px;
+	max-width:1200px;
+}
+
+@media only screen and (max-width: 400px) {
+  /* For mobile phones: */
+  #navbar {
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+		font-size: 1em;
+    max-height: 258px;
+    border: none;
+    z-index: 1;
+    border-bottom: 2px solid;
+  }
+	#navbar header {
+		margin: 0 auto;
+		text-align: center;
+	}
+
+  #main-doc {
+    position: relative;
+    margin-left: 0px;
+    margin-top: 258px;
+		padding: 0 40px;
+  }
+	#navbar ul {
+		padding: 0;
+	}
+	#navbar li {
+		text-align: center;
+		margin: auto;
+	}
+}
+</style>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+	<nav id="navbar">
+		<header>
+			<h1>Wood types</h1>
+		</header>
+    <ul>
+      <li><a class="nav-link" href="#ash">Ash</a></li>
+      <li><a class="nav-link" href="#beech">Beech</a></li>
+      <li><a class="nav-link" href="#cherry">Cherry</a></li>
+			<li><a class="nav-link" href="#curly_maple">Curly Maple</a></li>
+			<li><a class="nav-link" href="#red_oak">Red Oak</a></li>
+    </ul>
+  </nav>
+<main id="main-doc">
+	<section class="main-section"  id="ash">
+		<header><h2>Ash</h2></header>
+		<h3>Color</h3>
+		<p>Creamy white to light brown heartwood, light sapwood.</p>
+		<h3>Density</h3>
+		<p>Very hard, excellent shock resistance.</p>
+		<h3>Grain</h3>
+		<p>Distinctive wide-open grain, has occasional brown streaks</p>
+		<h3>Finishing</h3>
+		<p>Takes all finishes well, pigmented stains will bring out the grain nicely.</p>
+		<h3>Common Uses:</h3>
+		<ul>
+			<li>Furniture</li>
+			<li>mouldings</li>
+			<li>flooring</li>
+			<li>baseball bats</li>
+		</ul>
+		<h3>Other Names:</h3>
+		<ul>
+			<li><code>White Ash</code></li>
+			<li><code>Brown Ash</code></li>
+			<li><code>Green Ash</code></li>
+		</ul>
+	</section>
+	<section class="main-section"  id="beech">
+		<header><h2>Beech</h2></header>
+		<h3>Color</h3>
+		<p>Pink to reddish brown heartwood, sapwood is creamy to pink</p>
+		<h3>Density</h3>
+		<p>Very hard, heavy in weight, excellent shock resistance</p>
+		<h3>Grain</h3>
+		<p>Moderate tight, fine grain with evident flecking at times</p>
+		<h3>Finishing</h3>
+		<p>Should take a finish well.</p>
+		<h3>Distinctive Characteristics</h3>
+		<p>Very hard, cheaply priced substitute for Oak, Ash,, Hickory, does not impart taste or odor, usually only available in 1”. Very hard to kiln dry properly.</p>
+		<h3>Common Uses</h3>
+		<ul>
+			<li>Chair parts</li>
+			<li>furniture</li>
+			<li>flooring</li>
+			<li>food containers</li>
+			<li>toys</li>
+			<li>woodenware</li>
+		</ul>
+	</section>
+	<section class="main-section"  id="cherry">
+		<header><h2>Cherry</h2></header>
+		<h3>Color</h3>
+		<p>Red to deep reddish brown heartwood, white to yellowish sapwood</p>
+		<h3>Density</h3>
+		<p>Medium weight, moderately hard, stiff and strong</p>
+		<h3>Grain</h3>
+		<p>Fine, closed grain</p>
+		<h3>Finishing</h3>
+		<p>Takes a finish well, however light to natural finishes are recommended.</p>
+		<h3>Distinctive Characteristics</h3>
+		<p>Beautiful markings  (gum streaks, pin knots sometimes) and red color will darken to a rich reddish brown with age.</p>
+		<h3>Common Uses</h3>
+		<ul>
+			<li>High end furniture</li>
+			<li>cabinets</li>
+			<li>interior millwork</li>
+			<li>musical instruments</li>
+			<li>paneling</li>
+			<li>flooring</li>
+		</ul>
+		<h3>Other Names</h3>
+		<ul>
+			<li><code>American Black Cherry</code></li>
+			<li><code>Choke Cherry</code></li>
+			<li><code>Rum Cherry</code></li>
+			<li><code>Whiskey Cherry</code></li>
+			<li><code>Wild Cherry</code></li>
+		</ul>
+	</section>
+	<section class="main-section"  id="curly_maple">
+		<header><h2>Curly Maple</h2></header>
+		<h3>Color</h3>
+		<p>Creamy white to grayish white sapwood, heartwood can be brown to greenish brown with some mineral streaks.</p>
+		<h3>Density</h3>
+		<p>Moderately hard and strong, not quite as strong as Hard Maple.</p>
+		<h3>Grain</h3>
+		<p>Light to very heavy patterns running  perpendicular to normal grain orientation</p>
+		<h3>Finishing</h3>
+		<p>Dark finishes will vary depending on grain  orientation of curl (light to dark absorption).</p>
+		<h3>Distinctive Characteristics</h3>
+		<p>This curl is generally very apparent. The intensity may vary from board to board.</p>
+		<h3>Common Uses</h3>
+		<ul>
+			<li>Specialty furniture (Shaker and Mission styles)</li>
+			<li>striking trim</li>
+			<li>flooring</li>
+			<li>paneling</li>
+		</ul>
+		<h3>Other Names</h3>
+		<ul>
+			<li><code>Flame</code></li>
+			<li><code>Fiddle Back</code></li>
+			<li><code>Tiger Strip (usually denoting the intensity of the pattern)</code></li>
+		</ul>
+	</section>
+	<section class="main-section"  id="red_oak">
+		<header><h2>Red Oak</h2></header>
+		<h3>Color</h3>
+		<p>Pinkish red to blonde in color</p>
+		<h3>Density</h3>
+		<p>Very hard and strong</p>
+		<h3>Grain</h3>
+		<p>Openly porous and with dramatic grain patterns. Like White Oak, it is offered in Quartered and Rift grains also.</p>
+		<h3>Finishing</h3>
+		<p>Due to porous nature it will soak up stains but also offers a wide variety of finish tones.</p>
+		<h3>Distinctive Characteristics</h3>
+		<p>This is probably the most popular hardwood used in modern woodworking. Broad grains give this a pronounced appearance.</p>
+		<h3>Common Uses</h3>
+		<ul>
+			<li>Furniture</li>
+			<li>cabinets</li>
+			<li>moulding</li>
+			<li>trim</li>
+			<li>flooring</li>
+			<li>paneling</li>
+			<li>turning</li>
+		</ul>
+		<h3>Other Names</h3>
+		<ul>
+			<li><code>Northern Red</code></li>
+			<li><code>Southern Red</code></li>
+			<li><code>Black</code></li>
+			<li><code>Shumard</code></li>
+			<li><code>Cherrybark</code></li>
+			<li><code>Scarlet</code></li>
+			<li><code>Pin</code></li>
+		</ul>
+	</section>
+</main>

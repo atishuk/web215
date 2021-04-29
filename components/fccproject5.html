@@ -1,0 +1,299 @@
+<style>
+
+	* {
+  margin: 0;
+  padding: 0;
+	font-family: 'Philosopher', sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+/* 1200px / 16px = 75em */
+@media (max-width: 75em) {
+  html {
+    font-size: 60%;
+  }
+}
+
+/* 980px / 16px = 61.25em */
+@media (max-width: 61.25em) {
+  html {
+    font-size: 58%;
+  }
+}
+
+/* 460px / 16px = 28.75em */
+@media (max-width: 28.75em) {
+  html {
+    font-size: 55%;
+  }
+}
+
+/* Base styles */
+
+body {
+  font-family: 'Philosopher', sans-serif;
+  font-size: 1.8rem; /* 18px */
+  font-weight: 400;
+  line-height: 1.4;
+  color: black;
+	background-color: #E0E0E0;
+}
+
+h1,
+h2 {
+	font-family: 'Permanent Marker', cursive;
+	font-weight: bold;
+  text-align: center;
+}
+
+h1 {
+  font-size: 6rem;
+}
+
+h2 {
+  font-size: 4.2rem;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #663F00;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+/* nav */
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+  z-index: 10;
+	background-color: #F0C53D;
+}
+
+.nav-list {
+  display: flex;
+  margin-right: 2rem;
+}
+
+@media (max-width: 28.75em) {
+  .nav {
+    justify-content: center;
+  }
+
+  .nav-list {
+    margin: 0 1rem;
+  }
+}
+
+.nav-list a {
+  display: block;
+  font-size: 2.2rem;
+  padding: 2rem;
+}
+
+.nav-list a:hover {
+  background-color: #9F710B;
+}
+
+/* Welcome section */
+
+.welcome-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #E0E0E0;
+}
+
+.welcome-section > p {
+  font-size: 3rem;
+  font-weight: 200;
+  font-style: italic;
+}
+
+/* Projects section */
+
+.projects-section {
+  text-align: center;
+  padding: 10rem 2rem;
+  background: #9F710B;
+}
+
+.projects-section-header {
+  max-width: 80%;
+  margin: -2rem auto 6rem auto;
+}
+
+@media (max-width: 28.75em) {
+  .projects-section-header {
+    font-size: 4rem;
+  }
+}
+
+/* "Automagic" image grid using no media queries */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 4rem;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+}
+
+@media (max-width: 30.625em) {
+  .projects-section {
+    padding: 6rem 1rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.project {
+  background: var(--main-gray);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 2px;
+}
+
+.code {
+  color: #9F710B;
+  transition: color 0.3s ease-out;
+}
+
+.project:hover .code {
+  color: #F0C53D;
+}
+
+.project-image {
+  height: calc(100% - 6.8rem);
+  width: 100%;
+  object-fit: cover;
+}
+
+.project-title {
+  font-size: 2rem;
+  padding: 2rem 0.5rem;
+	color: black;
+}
+
+.project:hover .project-title {
+  color: #F0C53D;
+}
+
+/* Contact section */
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: 2px;
+}
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 80vh;
+  padding: 0 2rem;
+  background: #E0E0E0;
+}
+
+.contact-section-header > h2 {
+  font-size: 6rem;
+}
+
+@media (max-width: 28.75em) {
+  .contact-section-header > h2 {
+    font-size: 4rem;
+  }
+}
+
+.contact-section-header > p {
+  font-style: italic;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 980px;
+  margin-top: 4rem;
+  flex-wrap: wrap;
+}
+
+.contact-details {
+  font-size: 2.4rem;
+	font-weight: 700;
+  text-shadow: 1px 1px 1px #9F710B;
+  transition: transform 0.3s ease-out;
+}
+
+.contact-details:hover {
+  transform: translateY(8px);
+}
+
+</style>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<nav id="navbar" class="nav">
+	<ul class="nav-list">
+		<li><a class="nav-link" href="#welcome-section">About</a></li>
+		<li><a class="nav-link" href="#projects">My FCC projects</a></li>
+		<li><a class="nav-link" href="#contact">Contact</a></li>
+	</ul>
+</nav>
+<section id="welcome-section" class="welcome-section">
+	<h1>Nastassia Tsishuk</h1>
+	<p>Nice to meet you on my page</p>
+</section>
+<section id="projects" class="projects-section">
+  <h2 class="projects-section-header">These are some of my projects</h2>
+  <div class="projects-grid">
+    <a href="https://codepen.io/ntsishu0/pen/VwPREZe" target="_blank" class="project project-tile">
+      <img class="project-image" src="../images/project1.jpg" alt="project" />
+      <p class="project-title"><span class="code">&lt;</span>Tribute Page<span class="code">&#47;&gt;</span></p>
+    </a>
+    <a href="https://codepen.io/ntsishu0/pen/dyNrqro" target="_blank" class="project project-tile" >
+      <img class="project-image" src="../images/project2.jpg" alt="project" />
+      <p class="project-title"><span class="code">&lt;</span>Survey Form<span class="code">&#47;&gt;</span></p>
+    </a>
+    <a href="https://codepen.io/ntsishu0/pen/eYgoYvz" target="_blank" class="project project-tile" >
+      <img class="project-image" src="../images/project3.jpg" alt="project" />
+      <p class="project-title"> <span class="code">&lt;</span>Product Landing Page<span class="code">&#47;&gt;</span> </p>
+    </a>
+    <a href="https://codepen.io/ntsishu0/pen/zYNXprp" target="_blank" class="project project-tile" >
+      <img class="project-image" src="../images/project4.jpg" alt="project" />
+      <p class="project-title"><span class="code">&lt;</span>Technical Documentation Page<span class="code">&#47;&gt;</span></p>
+    </a>
+</section>
+<section id="contact" class="contact-section">
+  <div class="contact-section-header">
+    <h2>Let's work together...</h2>
+  </div>
+  <div class="contact-links">
+    <a id="profile-link" href="https://github.com/freecodecamp" target="_blank" class="btn contact-details">GitHub</a>
+    <a href="mailto:example@example.com" class="btn contact-details">Send a mail</a>
+    <a href="tel:555-555-5555" class="btn contact-details">Call me</a>
+  </div>
+</section>

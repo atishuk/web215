@@ -1,0 +1,213 @@
+<style>
+	body {
+		font-family: 'Philosopher', sans-serif;
+	}
+
+	p {
+		margin: 0;
+	}
+
+  #description {
+    text-align: center;
+  }
+
+li {
+  list-style: none;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+header{
+	border-bottom: 4px solid #663F00;
+	box-shadow: 5px 5px 15px #663F00;
+	display: inline-block;
+	height: 192 px;
+	width: 100%;
+	position: fixed;
+  top: 0;
+	background: url(../images/wooden3.jpg);
+	background-position: 0 5%;
+	background-size: 50%;
+	background-color: #F0C53D;
+	min-width:560px;
+	text-align: center;
+}
+
+#background-header {
+	height: 192px;
+}
+
+h1, h2, h3, h4, h5 {
+	text-align: center;
+	font-family: 'Permanent Marker', cursive;
+	font-weight: bold;
+}
+
+.our-work {
+	text-align: center;
+}
+
+figure {
+	text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  margin: auto;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+	padding: 5px 10px;
+	font-size: 1.2em;
+	font-family: 'Permanent Marker', cursive;
+	background-color: #F0C53D;
+	border-radius: 5px;
+}
+
+nav li:hover {
+	background-color: #9F710B;
+}
+
+#benefits {
+	text-align: center;
+}
+
+#header-img {
+	width: 150px;
+	height: auto;
+}
+
+@media (max-width: 650px) {
+	#header-img {
+		width: 100px;
+		height: auto;
+	}
+  nav li {
+    /* margin-top: 10px; */
+		display: block;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+		font-size: 1em;
+		border-radius: 0;
+  }
+}
+
+#video {
+	display: block;
+	margin: auto;
+	text-align: center;
+}
+
+figcuption {
+	display: block;
+	font-style: italic;
+}
+
+#form {
+	display: inline-block;
+	margin: 20px 10px;
+}
+
+label {
+	display: flex;
+	align-items: center;
+}
+
+.form-control {
+	display: block;
+	width: 100%;
+	height: 2.375rem;
+	padding: 0.375rem 0.75rem;
+	color: #495057;
+	background-color: #fff;
+	background-clip: padding-box;
+	border: 1px solid #ced4da;
+	border-radius: 0.25rem;
+	transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control:focus {
+	border-color: #F0C53D;
+	outline: 0;
+	box-shadow: 0 0 0 0.2rem rgba(240, 197, 61, 0.25);
+}
+
+#submit {
+	display: inline-block;
+	background-color: #F0C53D;
+	min-width: 45px;
+	color: inherit;
+	border-radius: 5px;
+	cursor: pointer;
+	padding: 10px 5px;
+}
+
+.form-group {
+	margin: 10px 0;
+}
+
+</style>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<header id="header">
+	<div class="transbox"></div>
+		<div class="logo">
+				<img id="header-img" src="../images/logo_200x200.png" />
+		</div>
+	<nav id="nav-bar">
+    <ul>
+      <li><a class="nav-link" href="#benefits">Benefits</a></li>
+      <li><a class="nav-link" href="#how-it-works">How It Works</a></li>
+      <li><a class="nav-link" href="#our-work">Our work</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+<div class="container" id="background-header"></div>
+<form id="form" action="https://www.freecodecamp.com/email-submit">
+	<div class="form-group">
+		<label id="name-label" for="name">Name:</label>
+		<input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required />
+	</div>
+	<div class="form-group">
+		<label id="email-label" for="email">Email:</label>
+		<input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required />
+	</div>
+	<div class="form-group">
+		<input id="submit" type="submit" value="Subscribe" class="btn" />
+	</div>
+</form>
+<section id="benefits">
+	<h2>Our Benefits</h2>
+	<ul>
+		<li>Higher Product Quality</li>
+		<li>Clear epoxy</li>
+		<li>Only the best materials</li>
+		<li>Natural wood</li>
+	</ul>
+<section>
+<section id="how-it-works">
+	<h2>How it works</h2>
+  <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/8qZchPRaV8I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</section>
+<section id="our-work">
+	<h2>Gallery</h2>
+	<figure>
+		<img src="../images/board1.jpg" alt="End Grain Cutting Board"/>
+		<figcuption>End Grain Cutting Board</figcuption>
+	</figure>
+	<figure>
+		<img src="../images/boards.jpg" alt="Edge Grain Cutting Boards" />
+		<figcuption>Edge Grain Cutting Boards</figcuption>
+	</figure>
+	<figure>
+		<img src="../images/boards2.jpg" alt="Our Cutting Boards" />
+		<figcuption>Our Cutting Boards</figcuption>
+	<figure>
+</section>
+</main>
