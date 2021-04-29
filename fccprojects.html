@@ -3,12 +3,12 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Wood Charm - Contract Web 215</title>
+	<title>Wood Charm - Template</title>
 	<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Philosopher:ital@0;1&display=swap" rel="stylesheet">
 	<!--font-family: 'Permanent Marker', cursive;
 	    font-family: 'Philosopher', sans-serif;-->
 	<link rel = "stylesheet" type = "text/css" href = "styles/default.css" />
-	<meta name="keywords" content="Nastassia Tsishuk, web215, introduction" />
+	<meta name="keywords" content="Nastassia Tsishuk, web215, template" />
 	<link href="images/icon.png" rel="icon" type="image/x-icon" />
 </head>
 <body>
@@ -16,10 +16,16 @@
 	<div data-include="components/header.html"></div>
 	<main>
 		<div data-include="components/navigation.html"></div>
-		<div data-include="components/contract.html"></div>
+		<div data-include="components/fccprojects.html"></div>
 	</main>
 <!-- include footer-->
 <div data-include="components/footer.html"></div>
+<!-- nice function to resize iframe by content. Don't forget to add <iframe src="..." frameborder="0" scrolling="no" onload="resizeIframe(this)" />
+<script>
+  function resizeIframe(obj) {
+    obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
+  }
+</script> -->
 <script src="scripts/htmlinclude.js"></script>
 </body>
 </html>
